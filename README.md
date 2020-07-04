@@ -2,6 +2,9 @@
 
 The events data is collected from www.meetup.com via web scraping tools. www.import.io is a web scraping tool used to extract lists from the webpages. Data can be extracted by either APIs or web scraping. Data is extracted from meetup website in the form of CSV file, after that the csv file gets cleaned to remove junk values from data and finally the csv file got converted into a JSON file which can be dumped to our database.
 
+Csv data file is cleaned manually by cross checking details like a single column must contain similar type of  or there shouldn't be more than 1 value in a grid etc.
+Csv file is converted to JSON using http://beautifytools.com/csv-to-json-converter.php . 
+
 # events-aggregation model
 Objective:- To create and implement a data model which is used to collect data regarding upcoming tech & business events,seminars,webinars etc. from other reliable websites through their API(application programming interface) service or via web scraping, so that it can be putted down to a single database from where global users can access & transfer events data to their own blogs,websites,community etc. through our GraphQL serverless architecture. 
 
