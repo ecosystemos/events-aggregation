@@ -7,6 +7,7 @@ type Event {
         category: String
         date: String
         groupname: String
+        time-zone: String
     }
     input EventInput {
         name: String!
@@ -17,6 +18,7 @@ type Event {
         category: String!
         date: String!
         groupname: String!
+        time-zone: String!
     }
     type Query {
         events(name: String, state: String, date: String): [Event!]
